@@ -1,4 +1,4 @@
-# machine-vision
+# 3D Handpose Estimation using Single Depth Images (CSC490H5F)
 **Group**: Gesture Geniuses
 
 **Group Members**: Taha Kazi, Saad Afridi, Daria Illianova, Carlos Saputra
