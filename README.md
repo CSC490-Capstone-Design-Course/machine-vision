@@ -18,6 +18,10 @@ A sample of hand images is available below, to get a visual sense of the ICVL da
  **Implementation Overview**:
 
 **Results**:
+Evaluate the Test Dataset
+84/84 [==============================] - 777s 9s/step - loss: 11.9997 - mae: 11.9997
+test loss, test acc: [11.999682426452637, 11.999682426452637]
+Finished Evaluating the Test Dataset
 
 **Contributions**:
 
