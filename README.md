@@ -1,7 +1,7 @@
 # 3D Handpose Estimation using Single Depth Images (CSC490H5F)
 **Group**: Gesture Geniuses
 
-**Group Members**: Taha Kazi, Saad Afridi, Daria Illianova, Carlos Saputra
+**Group Members**: Taha Kazi, Saad Afridi, Daria Illarionova, Carlos Saputra
 
 **Problem Statement**: Accurate and real-time estimation of 3D hand pose from single depth images is a pressing challenge in computer vision. Existing methods face limitations in precision and robustness, particularly in handling joint ambiguities, and complex hand poses. This project aims to utilize Machine Learning to improve the accuracy and reliability of 3D hand pose estimation, enhancing its applicability in virtual reality, gesture recognition, and human-computer interaction systems.
 
@@ -13,11 +13,11 @@ A sample of hand images is available below, to get a visual sense of the ICVL da
 
 ![image](https://github.com/CSC490-Capstone-Design-Course/machine-vision/assets/47696403/a3e62f5b-0e5e-4448-99ed-f38958216a44)
 
- https://labicvl.github.io/hand.html 
+ [ICVL Dataset Link](https://www.google.com)
 
  **Implementation Overview**:
 
-**Results**:
+**Results**: 
 Evaluate the Test Dataset
 84/84 [==============================] - 777s 9s/step - loss: 11.9997 - mae: 11.9997
 test loss, test acc: [11.999682426452637, 11.999682426452637]
