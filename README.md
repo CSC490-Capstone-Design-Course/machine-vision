@@ -29,6 +29,7 @@ _Output:_
  **Implementation Overview**: 
 
 **Evaluation Results**: 
+
 In terms of our Evaluation results we looked at 3 major values, namely Mean Absolute Error value (MAE), Median Absolute Error value, and Standard Deviation of Residuals value:
 
 1. Mean Absolute Error (MAE) value: 11.9, suggesting a moderate level of error in the predictions.
@@ -36,15 +37,20 @@ In terms of our Evaluation results we looked at 3 major values, namely Mean Abso
 3. Standard Deviation of Residuals value: 15.3, suggesting that there is a slight variability in the model’s predictions. Ultimately highlighting that certain handposes or scenarios yield more accurate predictions, while others may result in larger errors.
 
 Below are the results from the console:
+
 Evaluate the Test Dataset
 84/84 [==============================] - 777s 9s/step - loss: 11.9997 - mae: 11.9997
 test loss, test acc: [11.999682426452637, 11.999682426452637]
 Finished Evaluating the Test Dataset
 
 **Contributions**:
+
 Saad Afrdi:
+
 Taha Kazi:
+
 Carlos Saputra:
+
 Daria Illarionova:
 
 **References**:
