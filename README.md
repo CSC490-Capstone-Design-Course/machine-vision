@@ -28,9 +28,7 @@ _Output:_
 
  **Implementation Overview**: 
 
-**Evaluation Results**: 
-
-In terms of our Evaluation results we looked at 3 major values, namely Mean Absolute Error value (MAE), Median Absolute Error value, and Standard Deviation of Residuals value:
+**Evaluation Results**: In terms of our Evaluation results we looked at 3 major values, namely Mean Absolute Error value (MAE), Median Absolute Error value, and Standard Deviation of Residuals value:
 
 1. Mean Absolute Error (MAE) value: 11.9, suggesting a moderate level of error in the predictions.
 2. Median Absolute Error value: 9.9, suggesting that ¼ of the model predictions have an absolute error of less than 9.9 units.
