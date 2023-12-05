@@ -28,9 +28,17 @@ _Output:_
 
  **Implementation Overview**: 
 
+
+
+
  **Training and Validation Results**:
  
+After Training, we need to train the hyperparameters and we found that there are 2 hyperparameters that can be tuned (Learning Rate and Batch Size). However, after experimenting with larger learning rate, we found that it causes the gradient too fluctuate (due to the nature of coordinates being precise with floats). Hence,
+we decide to only optimize the Batch Size. Choosing the Batch Size is also problematic since we are dealing with large dataset and images. Hence the maximum Batch Size that we can use depends on $$ max\_batch\_size = available\_GPU\_memory / 4 / (size\_of\_tensors + trainable\_parameters) $$
+So, we decide to train only on 128 and 64 batch size. Optimizing with both batch size took approximately 2 days total with the available GPU. The results are shown below (in the Validation Error).
+And also to avoid all data being preprocessed at the same time, we preprocess the data during training meaning that after we select a batch size, we preprocess them then train them instead of preprocessing all 330k images.
 
+You can find our pretrained weights for both batch size [here](https://drive.google.com/file/d/1IxQhVsetIYin2Soj3mgF3EGy1yPOrlFm/view?usp=drive_link)
 
 
 **Evaluation Results**: In terms of our Evaluation results we looked at 3 major values, namely Mean Absolute Error value (MAE), Median Absolute Error value, and Standard Deviation of Residuals value:
@@ -52,7 +60,12 @@ Below is a scatter plot of predicted compared to the actual values. This will he
 
 _Validation Error_:
 
-Below is a greaph displaying the training and validation loss from different batch sizes:
+Below is a graph displaying the training and validation loss from different batch sizes:
+
+1. Blue and Orange corresponds to training and validation loss of 128 batch size respectively (there is a cutoff due to crash during training, unable to retrieve graph information before checkpoint)
+2. Green and Red corresponds to training and validation loss of 64 batch size respectively
+
+(Training dataset has higher loss due to Dropout layers, not the case for Validation dataset)
 
  ![image](https://github.com/CSC490-Capstone-Design-Course/machine-vision/assets/47696403/9408cea9-1df0-4fee-ab6a-87cf783d8617)
 
