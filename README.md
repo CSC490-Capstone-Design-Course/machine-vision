@@ -87,19 +87,19 @@ The numpy array is of data type float32 where the values range anywhere from 0-1
 
 Defined mathematically:
 
- $\begin{bmatrix} 
+$$\begin{bmatrix} 
     x_{11} & x_{12} & \dots \\
     \vdots & \ddots & \vdots \\
      x_{m1} &  \dots & x_{mn} \\ 
-    \end{bmatrix}$
+    \end{bmatrix}$$
 
 Where $m=240$, and $n=320$ and $0 \le x_i \le 1$ for all $i$.
 
 The model outputs an array of 48 floats (as defined in the linear layer of the model). Defined mathematically:
 
-$\begin{bmatrix} 
+$$\begin{bmatrix} 
     x_1 & \dots &  x_n
-    \end{bmatrix}$
+    \end{bmatrix}$$
 
 Where $n=48$ and $x_i$ is one of $x,y,z$ point in the 3D space for all $i$. 
 
