@@ -11,7 +11,7 @@
  
 ![image](https://github.com/CSC490-Capstone-Design-Course/machine-vision/assets/47696403/2e08181d-50d8-4555-9220-2b09c8ddad96)
 
-A sample of hand images is available below, to get a visual sense of the ICVL dataset we used:
+A sample of hand images is available below, to get a visual sense of the ICVL dataset we used [3]:
 
 ![image](https://github.com/CSC490-Capstone-Design-Course/machine-vision/assets/47696403/a3e62f5b-0e5e-4448-99ed-f38958216a44)
 
@@ -56,3 +56,6 @@ Daria Illarionova:
 [1] Imperical College of London. (n.d.). 3D articulated hand pose estimation with single depth images. 3D Hand Pose Estimation. https://labicvl.github.io/hand.html 
 
 [2] N. Otberdout, L. Ballihi and D. Aboutajdine, ”Hand pose estimation based on deep learning depth map for hand gesture recognition,” 2017 Intelligent Systems and Computer Vision (ISCV), Fez, Morocco, 2017, pp. 1-8, doi: 10.1109/ISACV.2017.8054904.
+
+[3] Tang, D., Chang, H. J., Tejani, A., &amp; Kim, T.-K. (2017b). Latent regression forest: Structured estimation of 3D Hand poses. IEEE Transactions on Pattern Analysis and Machine Intelligence, 39(7), 1374–1387. https://doi.org/10.1109/tpami.2016.2599170 
+
