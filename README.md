@@ -5,8 +5,10 @@
 
 **Problem Statement**: Accurate and real-time estimation of 3D hand pose from single depth images is a pressing challenge in computer vision. Existing methods face limitations in precision and robustness, particularly in handling joint ambiguities, and complex hand poses. This project aims to utilize Machine Learning to improve the accuracy and reliability of 3D hand pose estimation, enhancing its applicability in virtual reality, gesture recognition, and human-computer interaction systems.
 
- [**Dataset**]([https://www.google.com](https://labicvl.github.io/hand.html )): We are working with the ICVL dataset in our project. The dataset is 2GB in size – not as large as our previous chosen dataset, which is good for efficiency in processing and training. It contains a total of 5000 images with a 240 x 320 resolution for each image. Furthermore, there is labelled data available, where each image has 16 points in total. Each line of labelled data is corresponding to each hand, which is represented by the 16 joint locations in their 3D (x,y,z) position. [1] The order of 16 joints is Palm, Thumb root, Thumb mid, Thumb tip, Index root, Index mid, Index tip, Middle root, Middle mid, Middle tip, Ring root, Ring mid, Ring tip, Pinky root, Pinky mid, Pinky tip. [1] 
+ [**Dataset**]([https://www.google.com](https://labicvl.github.io/hand.html): We are working with the ICVL dataset in our project. The dataset is 2GB in size – not as large as our previous chosen dataset, which is good for efficiency in processing and training. It contains a total of 5000 images with a 240 x 320 resolution for each image. Furthermore, there is labelled data available, where each image has 16 points in total. Each line of labelled data is corresponding to each hand, which is represented by the 16 joint locations in their 3D (x,y,z) position. [1] The order of 16 joints is Palm, Thumb root, Thumb mid, Thumb tip, Index root, Index mid, Index tip, Middle root, Middle mid, Middle tip, Ring root, Ring mid, Ring tip, Pinky root, Pinky mid, Pinky tip. [1] 
 
+ An image labelling each of the hand joints that are tracked [2]:
+ 
 ![image](https://github.com/CSC490-Capstone-Design-Course/machine-vision/assets/47696403/2e08181d-50d8-4555-9220-2b09c8ddad96)
 
 A sample of hand images is available below, to get a visual sense of the ICVL dataset we used:
@@ -29,9 +31,9 @@ _Output:_
 **Evaluation Results**: 
 In terms of our Evaluation results we looked at 3 major values, namely Mean Absolute Error value (MAE), Median Absolute Error value, and Standard Deviation of Residuals value:
 
-1. Mean Absolute Error(MAE) value: 11.9, suggesting a moderate level of error in the predictions.
+1. Mean Absolute Error (MAE) value: 11.9, suggesting a moderate level of error in the predictions.
 2. Median Absolute Error value: 9.9, suggesting that ¼ of the model predictions have an absolute error of less than 9.9 units.
-3. Standard Deviation of Residuals value: 15.3, suggesting that there is a slight variability in the model’s predictions. Ultimately highlighting that certain poses or scenarios yield more accurate predictions, while others may result in larger errors.
+3. Standard Deviation of Residuals value: 15.3, suggesting that there is a slight variability in the model’s predictions. Ultimately highlighting that certain handposes or scenarios yield more accurate predictions, while others may result in larger errors.
 
 Below are the results from the console:
 Evaluate the Test Dataset
@@ -40,7 +42,13 @@ test loss, test acc: [11.999682426452637, 11.999682426452637]
 Finished Evaluating the Test Dataset
 
 **Contributions**:
+Saad Afrdi:
+Taha Kazi:
+Carlos Saputra:
+Daria Illarionova:
 
 **References**:
 
 [1] Imperical College of London. (n.d.). 3D articulated hand pose estimation with single depth images. 3D Hand Pose Estimation. https://labicvl.github.io/hand.html 
+
+[2] N. Otberdout, L. Ballihi and D. Aboutajdine, ”Hand pose estimation based on deep learning depth map for hand gesture recognition,” 2017 Intelligent Systems and Computer Vision (ISCV), Fez, Morocco, 2017, pp. 1-8, doi: 10.1109/ISACV.2017.8054904.
