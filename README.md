@@ -28,6 +28,11 @@ _Output:_
 
  **Implementation Overview**: 
 
+ **Training and Validation Results**:
+ 
+
+
+
 **Evaluation Results**: In terms of our Evaluation results we looked at 3 major values, namely Mean Absolute Error value (MAE), Median Absolute Error value, and Standard Deviation of Residuals value:
 
 1. Mean Absolute Error (MAE) value: 11.9, suggesting a moderate level of error in the predictions.
@@ -44,6 +49,12 @@ Finished Evaluating the Test Dataset
 Below is a scatter plot of predicted compared to the actual values. This will help to visualize how well the model is performing in terms of estimating the 3D poses:
 
 ![image](https://github.com/CSC490-Capstone-Design-Course/machine-vision/assets/47696403/6ea74af7-b074-4367-8382-cfc1c6686c5a)
+
+_Validation Error_:
+
+Below is a greaph displaying the training and validation loss from different batch sizes:
+
+ ![image](https://github.com/CSC490-Capstone-Design-Course/machine-vision/assets/47696403/9408cea9-1df0-4fee-ab6a-87cf783d8617)
 
 
 **Contributions**:
