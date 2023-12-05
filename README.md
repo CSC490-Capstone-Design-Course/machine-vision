@@ -50,6 +50,20 @@ You can find our pretrained weights for both batch size [here](https://drive.goo
 2. Median Absolute Error value: 9.9, suggesting that ¼ of the model predictions have an absolute error of less than 9.9 units.
 3. Standard Deviation of Residuals value: 15.3, suggesting that there is a slight variability in the model’s predictions. Ultimately highlighting that certain handposes or scenarios yield more accurate predictions, while others may result in larger errors.
 
+The Mean Absolute Error (MAE) value of 11.9 indicates the average absolute difference between the predicted and true 3D hand poses in our test dataset.
+The higher the MAE, the larger the average magnitude of errors. In this case, a MAE of 11.9 suggests a slight level of error in the predictions.
+
+The median absolute error yielded a value of 9.9.
+The median absolute error is the median value of the absolute differences between predicted and true 3D hand poses.
+A value of 9.9 implies that, on average, a quarter of our model's predictions have an absolute error of less than 9.9 units. 
+Our median absolute error being on the lower end, indicate that the model's predictions are close to the true values and mostly consistent across instances.
+
+The standard deviation measures the spread or variability of errors around the mean, where a higher standard deviation indicates a greater spread of errors. 
+A standard deviation of approximately 15.3 suggests that there is slight variability in the model's predictions. 
+This indicates that individual predictions are varying quite a bit from the average prediction error.  Some predictions may have errors much larger than the mean error, while others may have errors much smaller. 
+Our standard deviation suggests that some poses or scenarios may lead to more accurate predictions, while others may result in larger errors.
+
+
 Below are the results from the console:
 
 Evaluate the Test Dataset
@@ -57,7 +71,13 @@ Evaluate the Test Dataset
 test loss, test acc: [11.999682426452637, 11.999682426452637]
 Finished Evaluating the Test Dataset
 
-Below is a scatter plot of predicted compared to the actual values. This will help to visualize how well the model is performing in terms of estimating the 3D poses:
+Evaluate the Test Dataset for Standard Deviation
+Median Absolute Error: 9.92608306884766
+Standard Deviation of Residuals: 15.30694876771734
+Finished Evaluating the Test Dataset
+
+Below is a scatter plot of predicted compared to the actual values. This visualization allows us to understand how well the model is performing in terms of estimating the 3D poses. The plot shows a diagonal line yet its shape indicates that the model's accuracy varies across different poses. 
+Suggesting that the model might be struggling with certain intricate or less common hand configurations, leading to increased variability in the predictions. :
 
 ![image](https://github.com/CSC490-Capstone-Design-Course/machine-vision/assets/47696403/6ea74af7-b074-4367-8382-cfc1c6686c5a)
 
