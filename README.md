@@ -34,7 +34,10 @@ _Output:_
  **Training and Validation Results**:
  
 After Training, we need to train the hyperparameters and we found that there are 2 hyperparameters that can be tuned (Learning Rate and Batch Size). However, after experimenting with larger learning rate, we found that it causes the gradient too fluctuate (due to the nature of coordinates being precise with floats). Hence,
-we decide to only optimize the Batch Size. Choosing the Batch Size is also problematic since we are dealing with large dataset and images. Hence the maximum Batch Size that we can use depends on $$ max\_batch\_size = available\_GPU\_memory / 4 / (size\_of\_tensors + trainable\_parameters) $$
+we decide to only optimize the Batch Size. Choosing the Batch Size is also problematic since we are dealing with large dataset and images. Hence the maximum Batch Size that we can use depends on 
+
+$$ max\_batch\_size = available\_GPU\_memory / 4 / (size\_of\_tensors + trainable\_parameters) $$
+
 So, we decide to train only on 128 and 64 batch size. Optimizing with both batch size took approximately 2 days total with the available GPU. The results are shown below (in the Validation Error).
 And also to avoid all data being preprocessed at the same time, we preprocess the data during training meaning that after we select a batch size, we preprocess them then train them instead of preprocessing all 330k images.
 
