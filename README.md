@@ -41,6 +41,11 @@ Evaluate the Test Dataset
 test loss, test acc: [11.999682426452637, 11.999682426452637]
 Finished Evaluating the Test Dataset
 
+Below is a scatter plot of predicted compared to the actual values. This will help to visualize how well the model is performing in terms of estimating the 3D poses:
+
+![image](https://github.com/CSC490-Capstone-Design-Course/machine-vision/assets/47696403/6ea74af7-b074-4367-8382-cfc1c6686c5a)
+
+
 **Contributions**:
 
 Saad Afrdi:
