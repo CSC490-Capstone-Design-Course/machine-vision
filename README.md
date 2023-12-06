@@ -189,7 +189,7 @@ We ventured out to add an application layer to our project, however, it turned o
 | Saad Afridi     | - Writing the training code <br/> - Writing the preprocessing code <br/> - Organizing all group members and checking progress     |
 | Carlos Saputra   | - Writing the validation code <br/> - Tuning training code to run across days (saving models, loading models etc.) <br/> - Assisted other members with their technical portion of the project  |
 | Daria Illarionova | - Writing the testing and evaluation code <br/> - Leading development on **most** group related course assignments (posters, slides etc.) |
-| Taha Kazi | - Assisted in writing the training code <br/> - Lead development on the README and documentation |
+| Taha Kazi | - Assisted in writing the training code <br/> - Lead development on the final project poster, README and documentation |
 
 
 ## References:
