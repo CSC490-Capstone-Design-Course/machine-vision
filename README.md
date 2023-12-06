@@ -3,6 +3,22 @@
 
 **Group Members**: Taha Kazi, Saad Afridi, Daria Illarionova, Carlos Saputra
 
+## Setup
+
+### Download the Dataset and Model Weights
+Download the ICVL Dataset [here](https://labicvl.github.io/hand.html) and our pre-trained model weights [here](https://drive.google.com/file/d/1IxQhVsetIYin2Soj3mgF3EGy1yPOrlFm/view?usp=drive_link) 
+
+
+### File Explanations and Usage
+Each file corresponds with the stage of the model:
+`CSC490_saad_preprocessing_and_training.ipynb` 
+As the name highlights this is the file depicting the preprocessing and training of the model. Here is all the explanatory work occurring on the dataset and model training on a subset (~5000 images).
+
+`CSC490_carlos_tuning.ipynb`, in this file you will find the source of our validation code and the source of our pre-trained weights. 
+
+`CSC490_daria_evaluation.ipynb`, in this file you will find our evaluation code. Here we use a subset of the ICVL dataset to evaluate our model performance. 
+
+
 ## Problem Statement
 
 Estimation of 3D hand pose from single depth images is a pressing challenge in computer vision. Existing methods face limitations in precision and robustness, particularly in handling joint ambiguities, and complex hand poses. This project aims to utilize Machine Learning to improve the accuracy and reliability of 3D hand pose estimation, enhancing its applicability in virtual reality, gesture recognition, and human-computer interaction systems.
@@ -186,10 +202,10 @@ We ventured out to add an application layer to our project, however, it turned o
 
 | Name     | Contribution |
 | ----------- | ----------- |
-| Saad Afridi     | - Writing the training code <br/> - Writing the preprocessing code <br/> - Organizing all group members and checking progress     |
+| Saad Afridi     | - Writing the training code <br/> - Writing the preprocessing code <br/> - Organizing all group members, checking progress and other managerial duties    |
 | Carlos Saputra   | - Writing the validation code <br/> - Tuning training code to run across days (saving models, loading models etc.) <br/> - Assisted other members with their technical portion of the project  |
 | Daria Illarionova | - Writing the testing and evaluation code <br/> - Leading development on **most** group related course assignments (posters, slides etc.) |
-| Taha Kazi | - Assisted in writing the training code <br/> - Lead development on the README and documentation |
+| Taha Kazi | - Assisted in writing the training code <br/> - Lead development on the README and repository documentation |
 
 
 ## References:
